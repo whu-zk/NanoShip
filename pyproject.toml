@@ -49,9 +49,9 @@ nanoship = "nanoship.cli:main"
 nship = "nanoship.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/nanoship/nanoship"
-Repository = "https://github.com/nanoship/nanoship"
-Issues = "https://github.com/nanoship/nanoship/issues"
+Homepage = "https://github.com/whu-zk/NanoShip/nanoship"
+Repository = "https://github.com/whu-zk/NanoShip/nanoship"
+Issues = "https://github.com/whu-zk/NanoShip/issues"
 
 [build-system]
 requires = ["hatchling"]
