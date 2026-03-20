@@ -351,9 +351,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 💬 Community
 
-- [GitHub Discussions](https://github.com/nanoship/nanoship/discussions)
-- [Discord Server](https://discord.gg/nanoship)
-- [Twitter/X: @nanoship](https://twitter.com/nanoship)
+- [GitHub Discussions]()
+- [Discord Server]()
+- [Twitter/X: @nanoship]()
 
 ---
 
