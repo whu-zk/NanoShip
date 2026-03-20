@@ -1,0 +1,73 @@
+[project]
+name = "nanoship"
+version = "0.1.0"
+description = "Talk to your server, not the YAML files. AI-powered deployment agent for indie developers."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "NanoShip Team"}
+]
+keywords = ["deployment", "devops", "ai", "docker", "ssh", "automation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "paramiko>=3.4.0",
+    "litellm>=1.0.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "textual>=0.52.0",
+    "jinja2>=3.1.0",
+    "pyyaml>=6.0",
+    "requests>=2.31.0",
+    "toml>=0.10.2",
+    "watchdog>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+nanoship = "nanoship.cli:main"
+nship = "nanoship.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/nanoship/nanoship"
+Repository = "https://github.com/nanoship/nanoship"
+Issues = "https://github.com/nanoship/nanoship/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
